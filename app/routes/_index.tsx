@@ -1,13 +1,13 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from '@remix-run/node'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Liftwire" },
-    { name: "description", content: "Liftwire homepage" },
-  ];
-};
+    { title: 'Liftwire' },
+    { name: 'description', content: 'Liftwire homepage' }
+  ]
+}
 
-export default function Index() {
+export default function Index () {
   return (
     <div className="flex h-screen items-center justify-center">
       <div className="flex flex-col items-center gap-16">
@@ -50,13 +50,13 @@ export default function Index() {
         </nav>
       </div>
     </div>
-  );
+  )
 }
 
 const resources = [
   {
-    href: "https://remix.run/start/quickstart",
-    text: "Quick Start (5 min)",
+    href: 'https://remix.run/start/quickstart',
+    text: 'Quick Start (5 min)',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -73,11 +73,11 @@ const resources = [
           strokeLinejoin="round"
         />
       </svg>
-    ),
+    )
   },
   {
-    href: "https://remix.run/start/tutorial",
-    text: "Tutorial (30 min)",
+    href: 'https://remix.run/start/tutorial',
+    text: 'Tutorial (30 min)',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -94,11 +94,11 @@ const resources = [
           strokeLinejoin="round"
         />
       </svg>
-    ),
+    )
   },
   {
-    href: "https://remix.run/docs",
-    text: "Remix Docs",
+    href: 'https://remix.run/docs',
+    text: 'Remix Docs',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -114,11 +114,11 @@ const resources = [
           strokeLinecap="round"
         />
       </svg>
-    ),
+    )
   },
   {
-    href: "https://rmx.as/discord",
-    text: "Join Discord",
+    href: 'https://rmx.as/discord',
+    text: 'Join Discord',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -133,6 +133,6 @@ const resources = [
           strokeWidth="1.5"
         />
       </svg>
-    ),
-  },
-];
+    )
+  }
+]
